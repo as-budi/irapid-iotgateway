@@ -36,7 +36,7 @@ dependencies {
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
-    implementation 'io.kontakt.mvn:sdk:5.0.14'
+    implementation 'io.kontakt.mvn:sdk:7.0.12.2'
     implementation('org.eclipse.paho:org.eclipse.paho.android.service:1.0.2'){
         exclude module: 'support-v4'
     }
@@ -47,6 +47,8 @@ dependencies {
     implementation "software.amazon.awssdk:aws-core"
     implementation "software.amazon.awssdk.crt:aws-crt:0.21.3"
     implementation "com.squareup.okhttp3:okhttp:4.9.3"
+
+//    implementation "androidx.work:work-runtime:2.9.0-alpha01"
 
 //    implementation 'com.amazonaws:aws-java-sdk:1.12.118' {
 //        exclude group: 'com.amazonaws', module: 'aws-android-sdk-core'

@@ -262,6 +262,7 @@ public class MainActivity extends AppCompatActivity {
 
                 targetUID.add("b9407f30-f5f8-466e-aff9-25556b57fe6d");
                 targetUID.add("e1f54e02-1e23-44e0-9c3d-512eb56adec9");
+                targetUID.add("b9407f30-f5f8-466e-aff9-25556b57fe6d");
 
                 for (int i = 0; i < targetUID.size(); i++) {
                     if (ibeacon.getProximityUUID().toString().equals(targetUID.get(i))) {
@@ -296,7 +297,7 @@ public class MainActivity extends AppCompatActivity {
                     @Override
                     public void run() {
                         dataMessage.setText(merged);
-//                        publishBeacon(merged);
+                        publishBeacon(merged);
                     }
                 }, 5000);
 
